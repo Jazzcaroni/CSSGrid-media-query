@@ -1,0 +1,14 @@
+@mixin set-container {
+    border: 2px solid $black;
+    padding: 5px;
+}
+.container {
+    width: 90vw;
+    margin: 0 auto;
+   @include set-container();
+}
+
+.container-fluid {
+    @include set-container();
+    width: 100vw;
+}
